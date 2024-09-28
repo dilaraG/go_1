@@ -65,11 +65,11 @@ func main() {
 			fmt.Printf("%d, ", score)
 		}
 		// Рассчет средней оценки для каждого студента
-		var total float32 = 0
+		var total float64 = 0
 		for _, score := range scores {
-			total += float32(score)
+			total += float64(score)
 		}
-		average := total / float32(len(scores))
+		average := total / float64(len(scores))
 		fmt.Printf("\nСредняя оценка: %.2f\n\n", average)
 	}
 }
